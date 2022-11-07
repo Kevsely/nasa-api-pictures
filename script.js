@@ -89,7 +89,7 @@ function updateDOM(page) {
 }
 
 // Get 10 Images from NASA API 
-async function getNasaPictures() {
+async function getNasaPictures(page) {
     loader.classList.remove("hidden")
     try {
         const response = await fetch(apiUrl)
